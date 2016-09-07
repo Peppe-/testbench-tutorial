@@ -1,29 +1,36 @@
-import com.vaadin.testbench.TestBenchTestCase;
-import com.vaadin.testbench.elements.ButtonElement;
-import com.vaadin.testbench.elements.TableElement;
 import org.openqa.selenium.WebDriver;
 
+import com.vaadin.testbench.TestBenchTestCase;
+import com.vaadin.testbench.elements.ButtonElement;
+import com.vaadin.testbench.elements.GridElement;
+
+/**
+ * Created by Poorya on 9/7/2016.
+ */
 public class AddressBook extends TestBenchTestCase {
 
     public AddressBook(WebDriver driver) {
         setDriver(driver);
     }
 
-    public String getLastNameAtIndex() {
-        return $(TableElement.class).first().getCell(0, 1).getText();
+    public String getLastNameAtIndex(int index) {
+        return $(GridElement.class).first()
+                .getCell(index, 1).getText();
     }
 
     public String getFirstNameAtIndex(int index) {
-        return $(TableElement.class).first().getCell(index, 0).getText();
+        return $(GridElement.class).first()
+                .getCell(index, 0).getText();
     }
 
     public EntryForm selectEntryAtIndex(int index) {
-        $(TableElement.class).first().getCell(index, 0).click();
+        $(GridElement.class).first()
+                .getCell(index, 0).click();
         return new EntryForm(getDriver());
     }
 
     public EntryForm createNewEntry() {
-        $(ButtonElement.class).caption("New").first().click();
+        $(ButtonElement.class).caption("Add new customer").first().click();
         return new EntryForm(getDriver());
     }
 }
