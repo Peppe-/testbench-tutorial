@@ -4,9 +4,6 @@ import com.vaadin.testbench.TestBenchTestCase;
 import com.vaadin.testbench.elements.ButtonElement;
 import com.vaadin.testbench.elements.GridElement;
 
-/**
- * Created by Poorya on 9/7/2016.
- */
 public class AddressBook extends TestBenchTestCase {
 
     public AddressBook(WebDriver driver) {

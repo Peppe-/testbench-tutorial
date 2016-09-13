@@ -5,9 +5,6 @@ import com.vaadin.testbench.elements.ButtonElement;
 import com.vaadin.testbench.elements.FormLayoutElement;
 import com.vaadin.testbench.elements.TextFieldElement;
 
-/**
- * Created by Poorya on 9/7/2016.
- */
 public class EntryForm extends TestBenchTestCase {
 
     public EntryForm(WebDriver driver) {
