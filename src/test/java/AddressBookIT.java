@@ -10,7 +10,7 @@ import com.vaadin.testbench.elements.FormLayoutElement;
 import com.vaadin.testbench.elements.GridElement;
 import com.vaadin.testbench.elements.TextFieldElement;
 
-public class AddressBookTest extends TestBenchTestCase {
+public class AddressBookIT extends TestBenchTestCase {
     @Before
     public void setUp() throws Exception {
         setDriver(new FirefoxDriver());
