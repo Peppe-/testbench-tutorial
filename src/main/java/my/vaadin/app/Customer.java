@@ -1,7 +1,6 @@
 package my.vaadin.app;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -17,7 +16,7 @@ public class Customer implements Serializable, Cloneable {
 
 	private String lastName = "";
 
-	private LocalDate birthDate;
+	private Date birthDate;
 
 	private CustomerStatus status;
 
@@ -74,7 +73,7 @@ public class Customer implements Serializable, Cloneable {
 	 *
 	 * @return the value of birthDate
 	 */
-	public LocalDate getBirthDate() {
+	public Date getBirthDate() {
 		return birthDate;
 	}
 
@@ -84,7 +83,7 @@ public class Customer implements Serializable, Cloneable {
 	 * @param birthDate
 	 *            new value of birthDate
 	 */
-	public void setBirthDate(LocalDate birthDate) {
+	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
 
