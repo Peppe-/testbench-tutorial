@@ -1,7 +1,7 @@
 Vaadin TestBench Tutorial
 =========================
 
-This is the final code produced by the [Vaadin TestBench Tutorial](https://vaadin.com/docs/-/part/testbench/testbench-tutorial.html).
+This is the final code produced by the [Vaadin TestBench Tutorial](https://vaadin.com/docs/v8/testbench/testbench-tutorial.html).
 
 
 Running the example
